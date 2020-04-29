@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    
+ <head>
+     <meta charset="UTF-8">
+     <title>Form results</title>
+     <link href="css/style.css" rel="stylesheet" type="text/css">
+ </head>   
+ 
+ <body>
+     
+     <div class="results">
+         <h1 id="formtitle">You are now registered!</h1>
+         <p>Your input has been submitted. Thanks for sharing!</p>
+         
+         <h3>Your submitted data:</h3>
+         
+         <div id="userdata"></div>
+             
+         <p><a href="contact.html">Return to contact page.</a></p>
+    </div>
+    
+    
+    <!-- SOME JAVA SCRIPT HERE!!! -->
+    
+    
+    <script>
+     
+        const dataList = document.getElementById("userdata")
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            dataList.append(`${name}: ${value}`)
+            dataList.append(document.createElement('br'))
+            
+        })
+     
+    </script>
+     
+   <footer>
+        <div class="footer">
+            <div class="footer-about">
+                <h3>SM</h3>
+                <h4>Innovations</h4>
+                <br>
+                <p>Our mission statement is to showcase a selection of social media tools that reinforces the teaching and learning in universities in a simple, fun and efficient manner. </p>
+            </div>
+            <div class="footer-keep-touch"></div>
+
+            <div class="bedrock">
+                <p>&copy; sminnovations.com - Designed by Julia Lo Iacono</p>
+            </div>
+        </div> 
+    </footer>   
+     
+ </body>
+
+
+
+
+
+
+</html>

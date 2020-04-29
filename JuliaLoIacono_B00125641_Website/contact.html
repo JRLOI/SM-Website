@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <header class="main-header">
+      <img class="logo" src="images/logo.png">
+      <p id="motto"> Bringing social media &amp; education together</p>
+        <ul class="main-nav">
+          <li><a href="index.html" class="effect">Home</a></li>
+          <li><a href="smlistings.html" class="effect">SM Listings</a></li>
+          <li><a href="contact.html" class="effect">Contact</a></li>
+          <li><a href="resources.html" class="effect">Resources</a></li>
+        </ul>
+    </header>
+   
+     
+    <div class="side-nav">
+        <img class="icons"src="images/slack.png">
+        <img class="icons" src="images/linkedin.png">
+        <img class="icons" src="images/youtube.png">
+        <img class="icons" src="images/pinterest.png">
+        <img class="icons" src="images/instagram.png">    
+    </div>
+
+   
+ <!-- //////////////////////// F    O    R    M ///////////////////////////// -->      
+   
+   <section>
+        <form action="userdata.html" method="get" enctype="multipart/form-data">
+
+            <h1 id="formtitle">What do you think?</h1>
+            <p id="prompt">We'd love to hear your opinion and suggestions on how social media can benefit education!</p>  
+
+
+    <!-- //////////////////////// L O G I N    D E T A I L S ///////////////////////////// -->    
+
+            <fieldset>
+
+                <legend>Login details</legend>  
+
+                <div class="Div1 color">
+                    <label for="FirstName">First name: </label>      
+                    <input type="text" name="FirstName" id="FirstName" required>  
+                </div>
+
+                <div class="Div1 color">
+                    <label for="LastName">Last name: </label>      
+                    <input type="text" name="LastName" id="LastName" required>
+                </div>
+
+                <div class="Div1 color">
+                    <label for="Email">Email: </label>
+                    <input type="email" name="Email" id="Email" required>
+                </div>
+
+                <div class="Div1 color">
+                    <label for="Phone">Phone: </label>
+                    <input type="tel" id="Phone">
+                </div>
+
+                <div class="Div1 color">
+                    <label for="Password">Password: </label>      
+                    <input type="password" name="Password" id="Password" required>    
+                </div>
+
+            </fieldset>
+
+
+    <!-- //////////////////////// E D U C A T I O N ///////////////////////////// -->   
+
+            <fieldset>
+
+               <legend>Education</legend> 
+               <p class="instructions Div2">Are you a:</p>
+
+               <div class="color Div2">
+                    <input type="radio" name="role" id="role" required>
+                    <label for="role" class="buddies">Teacher</label>
+
+                    <input type="radio" name="role" id="role" required>
+                    <label for="role">Student</label>
+               </div>
+
+               <p class="instructions Div2">Please check the social media(s) which were helpful for you.</p>
+               <div class="color Div2">
+                   <input type="checkbox" name="linkedin" id="linkedin">
+                   <label for="linkedin" class="buddies">LinkedIn</label>
+
+                   <input type="checkbox" name="slack" id="slack">
+                   <label for="slack" class="buddies">Slack</label>
+
+                   <input type="checkbox" name="Youtube" id="Youtube">
+                   <label for="Youtube" class="buddies">Youtube</label>
+
+                   <input type="checkbox" name="Pintrest" id="Pintrest">
+                   <label for="Pintrest">Pintrest</label>
+
+               </div>
+
+
+               <div class="color Div2">
+                   <input type="checkbox" name="Habitica" id="Habitica">
+                   <label for="Habitica">Habitica</label>
+               </div>
+
+
+
+
+
+               <div class="Div2"> 
+                    <label for="educationlvl" class="instructions">Choose level of education:</label>
+                    <select name="educationlvl" id="educationlvl"  required>
+                        <option>(Lvl 3) Junior Certificate</option>
+                        <option>(Lvl 4) Leaving Certificate</option>
+                        <option>(Lvl 5) Leaving Certificate</option>
+                        <option>(Lvl 6) Higher Certificate</option>
+                        <option>(Lvl 7) Ordinary Bachelor Degree</option>
+                        <option>(Lvl 8) Honours Bachelor Degree</option>
+                        <option>(Lvl 9) Masters Degree</option>
+                        <option>(Lvl 10) Doctoral Degree</option>
+                    </select>
+               </div>
+
+               <p class="instructions tellus">Tell us what you think!</p>
+               <div>
+                  <label for="suggestions" class="instructions "></label>
+                   <textarea name="suggestions" id="suggestions" placeholder="Let us know your thoughts about social media for teaching and learning and tell us your idea!" required></textarea>
+               </div>  
+            </fieldset>
+
+            <div class="rightbutton">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+            <div class="leftbutton">
+                <button type="reset" id="reset">Reset Form</button>
+            </div>    
+        </form>
+    </section>
+   
+    <footer>
+        <div class="footer">
+            <div class="footer-about">
+                <h3>SM</h3>
+                <h4>Innovations</h4>
+                <br>
+                <p>Our mission statement is to showcase a selection of social media tools that reinforces the teaching and learning in universities in a simple, fun and efficient manner. </p>
+            </div>
+            <div class="footer-keep-touch"></div>
+
+            <div class="bedrock">
+                <p>&copy; sminnovations.com - Designed by Julia Lo Iacono</p>
+            </div>
+        </div> 
+    </footer> 
+
+</body>
+</html>
